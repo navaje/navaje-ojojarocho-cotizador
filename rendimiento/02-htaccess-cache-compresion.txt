@@ -1,0 +1,36 @@
+# Pegar al FINAL del .htaccess de ojojarocho.online (cPanel → Administrador de archivos → Mostrar archivos ocultos → editar .htaccess)
+# Si usas plugin de caché (FlyingPress / LiteSpeed Cache / WP Rocket) que ya comprime, pega SOLO la sección de caché de navegador (mod_expires + mod_headers).
+
+# --- Caché de navegador para estáticos (seguro con cualquier configuración) ---
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 1 month"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/avif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType font/woff "access plus 1 year"
+ExpiresByType font/woff2 "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType application/json "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(webp|avif|jpe?g|png|gif|svg|woff2?|css|js)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+</IfModule>
+
+# --- Compresión (solo si NO usas plugin de caché que ya comprima) ---
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/javascript application/x-javascript application/json application/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css application/javascript application/x-javascript application/json application/xml image/svg+xml
+</IfModule>
