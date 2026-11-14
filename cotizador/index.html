@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cotizador de cámaras de seguridad en Veracruz y Cardel | Ojo Jarocho</title>
+<meta name="description" content="Cotiza en línea tu sistema de videovigilancia CCTV en Veracruz, Cardel y Boca del Río. Calcula cuántas cámaras necesitas, los días de grabación y el disco recomendado. Servicio local, venta de equipos a todo México.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b1220">
+<link rel="canonical" href="https://cotizador.ojojarocho.online/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cotizador de cámaras de seguridad en Veracruz y Cardel | Ojo Jarocho">
+<meta property="og:description" content="Cotiza tu sistema de videovigilancia en 2 minutos: cámaras, grabación, disco recomendado y envío directo a WhatsApp.">
+<meta property="og:url" content="https://cotizador.ojojarocho.online/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"Cotización e instalación de sistemas de videovigilancia (CCTV) y redes","provider":{"@type":"Organization","name":"Ojo Jarocho","telephone":"+52-999-918-5208","email":"ventas@ojojarocho.online","url":"https://www.ojojarocho.online/"},"areaServed":[{"@type":"City","name":"Veracruz"},{"@type":"City","name":"Cardel"}],"availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://cotizador.ojojarocho.online/"}}
+</script>
+<style>
+:root{--bg:#0b1220;--panel:#111a2e;--panel2:#16233d;--texto:#e8eef7;--suave:#9fb0c9;--acento:#f5b301;--wa:#25d366;--borde:#243450;--err:#ff6b6b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--texto);line-height:1.55;min-height:100vh;display:flex;flex-direction:column}
+a{color:#7cc4ff}
+header{position:sticky;top:0;z-index:10;background:rgba(11,18,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.marca{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem}
+.marca .ojo{font-size:1.4rem}
+header .tel{font-size:.9rem;white-space:nowrap}
+main{flex:1;width:100%;max-width:680px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.7rem;line-height:1.25;margin:18px 0 10px}
+h2{font-size:1.25rem;margin-bottom:6px}
+.sub{color:var(--suave);margin-bottom:18px}
+.panel{background:var(--panel);border:1px solid var(--borde);border-radius:16px;padding:20px;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:52px;padding:14px 18px;border-radius:12px;border:none;font-size:1rem;font-weight:700;cursor:pointer;text-decoration:none;text-align:center}
+.btn-prim{background:var(--acento);color:#1a1200}
+.btn-wa{background:var(--wa);color:#052b12}
+.btn-sec{background:transparent;color:var(--texto);border:1px solid var(--borde)}
+.btn:active{transform:scale(.98)}
+.acciones{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+@media(min-width:560px){.acciones{flex-direction:row}.acciones .btn{width:auto;flex:1}}
+.opcion{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--panel2);border:1px solid var(--borde);border-radius:12px;color:var(--texto);padding:14px 16px;margin-bottom:10px;font-size:1rem;cursor:pointer;min-height:52px}
+.opcion .ic{font-size:1.35rem}
+.opcion.sel{border-color:var(--acento);background:#1d2a47;box-shadow:0 0 0 1px var(--acento)}
+.opcion .tag{margin-left:auto;font-size:.75rem;color:var(--acento);font-weight:700}
+.progreso-wrap{margin:6px 0 18px}
+.progreso-texto{display:flex;justify-content:space-between;font-size:.8rem;color:var(--suave);margin-bottom:6px}
+.barra{height:8px;background:var(--panel2);border-radius:99px;overflow:hidden}
+.barra>div{height:100%;background:var(--acento);border-radius:99px;transition:width .25s ease}
+#error{color:var(--err);font-size:.9rem;min-height:1.2em;margin-top:8px;font-weight:600}
+input[type=text],input[type=tel],input[type=number]{width:100%;min-height:52px;padding:12px 14px;border-radius:12px;border:1px solid var(--borde);background:var(--panel2);color:var(--texto);font-size:1rem;margin-bottom:12px}
+input:focus{outline:2px solid var(--acento);border-color:var(--acento)}
+label{display:block;font-size:.85rem;color:var(--suave);margin-bottom:6px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{background:var(--panel2);border:1px solid var(--borde);border-radius:99px;padding:10px 16px;font-size:.95rem;cursor:pointer;color:var(--texto);min-height:44px}
+.chip.sel{border-color:var(--acento);background:#1d2a47;font-weight:700}
+.tarjeta{background:var(--panel);border:1px solid var(--borde);border-radius:14px;padding:16px;margin-bottom:12px}
+.tarjeta h3{font-size:.95rem;margin-bottom:8px;color:var(--acento)}
+.tarjeta dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:.95rem}
+.tarjeta dt{color:var(--suave)}
+.tarjeta dd{font-weight:600;text-align:right}
+.resultado-num{font-size:1.5rem;font-weight:800;color:var(--acento)}
+.pasos3{display:grid;gap:10px;margin:14px 0}
+.pasos3 div{background:var(--panel2);border:1px solid var(--borde);border-radius:12px;padding:12px 14px;font-size:.92rem}
+details{background:var(--panel);border:1px solid var(--borde);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--suave);font-size:.92rem;margin-top:8px}
+.enlaces{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.enlaces a{font-size:.9rem}
+footer{border-top:1px solid var(--borde);padding:20px 16px;text-align:center;color:var(--suave);font-size:.85rem}
+footer a{color:#7cc4ff}
+.oculto{display:none}
+.aviso{font-size:.8rem;color:var(--suave);margin-top:12px}
+@media print{header,footer,.acciones,#quiz,#intro{display:none}body{background:#fff;color:#000}.panel,.tarjeta{background:#fff;color:#000;border-color:#ccc}h1,h2,h3{color:#000}}
+</style>
+</head>
+<body>
+<header>
+  <div class="marca"><span class="ojo">👁️</span> Ojo Jarocho <span style="color:var(--suave);font-weight:400">· Cotizador</span></div>
+  <a class="tel" href="tel:+5219999185208">📞 999 918 5208</a>
+</header>
+<main id="app">
+
+  <section id="intro">
+    <h1>Cotiza tu sistema de cámaras de seguridad en Veracruz y Cardel</h1>
+    <p class="sub">Responde unas preguntas y recibe al instante un resumen con el <strong>sistema recomendado, el almacenamiento (disco) necesario y los días de grabación</strong>. Sin compromiso. Servicio de instalación en <strong>Veracruz, Cardel y zonas cercanas</strong>; venta de equipos con envío a <strong>todo México</strong>.</p>
+    <div class="panel">
+      <button class="btn btn-prim" id="btnEmpezar">🚀 Empezar cotización (2 minutos)</button>
+      <div class="acciones">
+        <a class="btn btn-wa" id="waIntro" href="#">💬 Cotizar por WhatsApp</a>
+        <a class="btn btn-sec" href="https://www.syscom.mx/tienda/ojojarocho" target="_blank" rel="noopener">🛒 Ver catálogo de equipos</a>
+      </div>
+      <p class="aviso">Al continuar aceptas nuestro <a href="https://www.ojojarocho.online/aviso-de-privacidad">aviso de privacidad</a>. Tus datos solo se usan para enviarte la cotización.</p>
+    </div>
+
+    <div class="panel">
+      <h2>¿Cómo funciona?</h2>
+      <div class="pasos3">
+        <div><strong>1.</strong> Cuéntanos qué quieres proteger y cuántos puntos cubrir.</div>
+        <div><strong>2.</strong> Calculamos el disco necesario según tus días de grabación.</div>
+        <div><strong>3.</strong> Recibes el resumen y lo envías a nuestro WhatsApp con un toque.</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Cuánto cuesta instalar cámaras en Veracruz?</summary><p>Depende del número de cámaras, la calidad de imagen y los días de grabación. Un kit básico de 4 cámaras con instalación está pensado para hogares; para negocios recomendamos sistemas IP. Envía tu cotización por WhatsApp y te damos precio desglosado (equipo, instalación y disco).</p></details>
+      <details><summary>¿Cuántos días de grabación me conviene?</summary><p>Para la mayoría de hogares y negocios, 30 días es el estándar: permite revisar incidentes del último mes. Puedes calcularlo exacto arriba según tu disco.</p></details>
+      <details><summary>¿Puedo ver las cámaras desde mi celular?</summary><p>Sí. Todos los sistemas que instalamos incluyen acceso remoto desde la app oficial (Hikvision/Dahua/EZVIZ) en Android y iOS, con grabación local en tu propio grabador (DVR/NVR), sin cuotas mensuales obligatorias.</p></details>
+      <details><summary>¿Dan servicio fuera de Veracruz?</summary><p>La <strong>instalación y servicio técnico</strong> es local: Puerto de Veracruz, Cardel, Boca del Río, Medellín, Alvarado y zonas cercanas. La <strong>venta de equipos sí envía a todo México</strong> desde nuestro catálogo en SYSCOM.</p></details>
+      <details><summary>¿Incluyen factura y garantía?</summary><p>Sí, emitimos factura y la cotización desglosa equipo, mano de obra y garantía por separado.</p></details>
+    </div>
+
+    <div class="panel enlaces">
+      <a href="https://www.ojojarocho.online/">🏠 Ir a ojojarocho.online</a>
+      <a href="https://www.syscom.mx/tienda/ojojarocho" target="_blank" rel="noopener">🛒 Tienda Ojo Jarocho en SYSCOM</a>
+      <a href="tel:+5219999185208">📞 Llamar: 999 918 5208</a>
+    </div>
+  </section>
+
+  <section id="quiz" class="oculto">
+    <div class="progreso-wrap">
+      <div class="progreso-texto"><span id="progresoTexto">Paso 1 de 9</span><span>Ojo Jarocho</span></div>
+      <div class="barra"><div id="progresoBarra" style="width:11%"></div></div>
+    </div>
+    <div class="panel" id="pasoPanel"></div>
+    <div class="acciones">
+      <button class="btn btn-sec" id="btnAtras">← Atrás</button>
+      <button class="btn btn-prim" id="btnSiguiente">Siguiente →</button>
+    </div>
+    <div id="error"></div>
+  </section>
+
+  <section id="resultado" class="oculto">
+    <h1>Tu cotización preliminar 🎯</h1>
+    <p class="sub">Este es un estimado técnico. El precio final se confirma con una visita técnica (gratis) o por WhatsApp. Servicio en Veracruz, Cardel y alrededores.</p>
+    <div id="resumen"></div>
+    <div class="panel">
+      <h2>Enviar mi cotización</h2>
+      <div class="acciones">
+        <a class="btn btn-wa" id="btnWaResultado" href="#" target="_blank" rel="noopener">💬 Enviar por WhatsApp</a>
+        <button class="btn btn-sec" id="btnCopiar">📋 Copiar resumen</button>
+        <a class="btn btn-sec" id="btnTelResultado" href="tel:+5219999185208">📞 Llamar ahora</a>
+        <button class="btn btn-sec" id="btnImprimir">🖨️ Imprimir</button>
+      </div>
+      <div class="enlaces">
+        <a href="https://www.syscom.mx/tienda/ojojarocho" target="_blank" rel="noopener">🛒 Comprar equipos en SYSCOM (envío nacional)</a>
+        <a href="https://www.ojojarocho.online/">🏠 Volver a ojojarocho.online</a>
+      </div>
+      <p class="aviso">Al enviar por WhatsApp se abrirá el chat con tu resumen ya escrito. No compartimos tus datos con terceros. <a href="https://www.ojojarocho.online/aviso-de-privacidad">Aviso de privacidad</a>.</p>
+    </div>
+    <div class="acciones">
+      <button class="btn btn-sec" id="btnRehacer">↺ Hacer otra cotización</button>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <p><strong>Ojo Jarocho</strong> · Videovigilancia profesional y redes · Veracruz, México</p>
+  <p>📞 <a href="tel:+5219999185208">999 918 5208</a> · ✉️ <a href="mailto:ventas@ojojarocho.online">ventas@ojojarocho.online</a></p>
+  <p>Servicio de instalación: Puerto de Veracruz, Cardel y zonas cercanas · Venta de equipos: envío a todo México</p>
+  <p><a href="https://www.ojojarocho.online/">oj ojarocho.online</a> · <a href="https://www.ojojarocho.online/aviso-de-privacidad">Aviso de privacidad</a> · © 2026 Ojo Jarocho</p>
+</footer>
+
+<script>
+const CONFIG = {
+  ga4Id: 'G-XXXXXXXXXX',
+  whatsapp: '5219999185208',
+  tel: '+5219999185208',
+  site: 'https://www.ojojarocho.online/',
+  catalogo: 'https://www.syscom.mx/tienda/ojojarocho'
+};
+if (CONFIG.ga4Id && !CONFIG.ga4Id.includes('X')) {
+  const s = document.createElement('script');
+  s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + CONFIG.ga4Id;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date()); gtag('config', CONFIG.ga4Id);
+}
+function ev(nombre, params){ if (window.gtag) { try { window.gtag('event', nombre, params || {}); } catch(e){} } }
+
+const state = { paso: 0, r: {} };
+const app = document.getElementById('app');
+const intro = document.getElementById('intro');
+const quiz = document.getElementById('quiz');
+const resultado = document.getElementById('resultado');
+const panel = document.getElementById('pasoPanel');
+const errorEl = document.getElementById('error');
+const btnSiguiente = document.getElementById('btnSiguiente');
+const btnAtras = document.getElementById('btnAtras');
+
+const BITRATE_MBPS = { economica: 1.2, estandar: 2.6, alta: 6.0 };
+const DISCOS_TB = [1, 2, 4, 6, 8, 10, 12, 16, 18, 20];
+
+function opciones(campo, lista, conTag) {
+  return lista.map(o => `<button type="button" class="opcion" data-campo="${campo}" data-valor="${o[0]}" data-texto="${o[1]}">${o[2] ? `<span class="ic">${o[2]}</span>` : ''}<span>${o[1]}</span>${o[3] ? `<span class="tag">${o[3]}</span>` : ''}</button>`).join('');
+}
+
+const pasos = [
+  { id: 'tipo', titulo: '¿Qué quieres proteger?', sub: 'Elige la opción que más se parezca a tu espacio.', html: () => opciones('tipo', [
+      ['casa', 'Casa', '🏠'], ['depto', 'Departamento', '🏢'], ['negocio', 'Negocio o local comercial', '🏪'],
+      ['oficina', 'Oficina', '💼'], ['bodega', 'Bodega o nave industrial', '🏭'], ['terreno', 'Terreno o obra en construcción', '🚧'], ['otro', 'Otro', '📍']
+    ]),
+    validar: () => state.r.tipo ? null : 'Elige una opción para continuar.' },
+
+  { id: 'camaras', titulo: '¿Cuántos puntos quieres cubrir con cámaras?', sub: 'Cuenta entradas, pasillos, estacionamientos, patios, etc.', html: () => `
+      <div class="chips" id="chipsCamaras">
+        ${[1,2,4,8,16,24].map(n => `<button type="button" class="chip" data-campo="camaras" data-valor="${n}" data-texto="${n} ${n===1?'cámara':'cámaras'}">${n}</button>`).join('')}
+      </div>
+      <label for="camarasInput">O escribe el número exacto:</label>
+      <input type="number" id="camarasInput" inputmode="numeric" min="1" max="64" placeholder="Ej. 6" value="${state.r.camaras || ''}">`,
+    validar: () => { const c = parseInt(state.r.camaras); return (c >= 1 && c <= 64) ? null : 'Indica entre 1 y 64 cámaras.'; } },
+
+  { id: 'ubicacion', titulo: '¿Dónde irán las cámaras?', sub: 'El clima de Veracruz (humedad y salitre) influye en el tipo de cámara para exteriores.', html: () => opciones('ubicacion', [
+      ['exterior', 'Principalmente exterior', '🌳'], ['interior', 'Principalmente interior', '🛋️'], ['mixto', 'Mixto (interior y exterior)', '🔀']
+    ]),
+    validar: () => state.r.ubicacion ? null : 'Elige una opción.' },
+
+  { id: 'calidad', titulo: '¿Qué calidad de imagen necesitas?', sub: 'Más megapíxeles = más detalle para reconocer rostros o placas, pero ocupan más disco.', html: () => opciones('calidad', [
+      ['economica', 'Básica (HD 1-2 MP)', '💰'], ['estandar', 'Estándar Full HD (2-4 MP)', '⭐', 'Recomendada'], ['alta', 'Alta (5-8 MP / 4K)', '🎯']
+    ]),
+    validar: () => state.r.calidad ? null : 'Elige una opción.' },
+
+  { id: 'dias', titulo: '¿Cuántos días de video quieres conservar?', sub: 'Cuando el disco se llena, se sobrescribe lo más antiguo. 30 días es el estándar.', html: () => `
+      <div class="chips">${[['7','7 días'],['15','15 días'],['30','30 días','Recomendado'],['60','60 días'],['90','90 días o más']].map(o => `<button type="button" class="chip" data-campo="dias" data-valor="${o[0]}" data-texto="${o[1]}">${o[1]}${o[2] ? ' ⭐' : ''}</button>`).join('')}</div>`,
+    validar: () => state.r.dias ? null : 'Elige los días de retención.' },
+
+  { id: 'grabacion', titulo: '¿Cómo quieres que grabe?', sub: 'Grabar solo por movimiento puede ahorrar entre 30% y 70% de espacio en disco.', html: () => opciones('grabacion', [
+      ['continua', 'Continua 24/7', '⏺️'], ['movimiento', 'Solo cuando detecte movimiento', '🏃', 'Ahorra disco']
+    ]),
+    validar: () => state.r.grabacion ? null : 'Elige una opción.' },
+
+  { id: 'internet', titulo: '¿Hay internet en el lugar de instalación?', sub: 'Se necesita para ver las cámaras desde el celular fuera de casa.', html: () => opciones('internet', [
+      ['buena', 'Sí, buena conexión (fibra/cable)', '📶'], ['lenta', 'Sí, pero es lenta', '🐢'], ['no', 'No hay internet', '🚫'], ['nose', 'No lo sé', '❓']
+    ]),
+    validar: () => state.r.internet ? null : 'Elige una opción.' },
+
+  { id: 'distancia', titulo: '¿Qué tan lejos está el punto más lejano del router?', sub: 'Sirve para definir si conviene cableado UTP/PoE o un punto de acceso WiFi adicional.', html: () => opciones('distancia', [
+      ['menos15', 'Menos de 15 m', '📏'], ['15a30', '15 a 30 m', '📏'], ['30a60', '30 a 60 m', '📏'], ['mas60', 'Más de 60 m', '📏'], ['wifi', 'Solo usaré cámaras WiFi', '📡']
+    ]),
+    validar: () => state.r.distancia ? null : 'Elige una opción.' },
+
+  { id: 'datos', titulo: 'Tus datos para enviarte la cotización', sub: 'Solo los usamos para contactarte. Nada de spam.', html: () => `
+      <label for="inNombre">Nombre</label>
+      <input type="text" id="inNombre" autocomplete="name" placeholder="Ej. María López" value="${state.r.nombre || ''}">
+      <label for="inWa">WhatsApp (10 dígitos)</label>
+      <input type="tel" id="inWa" inputmode="numeric" autocomplete="tel" placeholder="Ej. 2299999999" value="${state.r.whatsapp || ''}">
+      <label for="inZona">Ciudad o colonia (para el servicio local)</label>
+      <input type="text" id="inZona" placeholder="Ej. Cardel, Ver. / Boca del Río" value="${state.r.zona || ''}">
+      <label>¿Quieres visita técnica gratuita en tu propiedad?</label>
+      <div class="chips">${[['si','Sí, agendar visita'],['no','No, solo cotización']].map(o => `<button type="button" class="chip" data-campo="visita" data-valor="${o[0]}" data-texto="${o[1]}">${o[1]}</button>`).join('')}</div>`,
+    validar: () => {
+      if (!state.r.nombre || state.r.nombre.trim().length < 2) return 'Escribe tu nombre.';
+      let d = (state.r.whatsapp || '').replace(/\D/g, '');
+      if (d.length === 12 && d.startsWith('52')) d = d.slice(2);
+      if (d.length === 11 && d.startsWith('1')) d = d.slice(1);
+      state.r.whatsapp = d;
+      if (d.length !== 10) return 'Escribe tu WhatsApp a 10 dígitos.';
+      if (!state.r.zona || state.r.zona.trim().length < 3) return 'Indica tu ciudad o colonia.';
+      return null;
+    } }
+];
+
+function renderPaso() {
+  const p = pasos[state.paso];
+  document.getElementById('progresoTexto').textContent = `Paso ${state.paso + 1} de ${pasos.length}`;
+  document.getElementById('progresoBarra').style.width = ((state.paso + 1) / pasos.length * 100) + '%';
+  panel.innerHTML = `<h2>${p.titulo}</h2>${p.sub ? `<p class="sub">${p.sub}</p>` : ''}${p.html()}`;
+  btnSiguiente.textContent = state.paso === pasos.length - 1 ? 'Ver mi cotización →' : 'Siguiente →';
+  btnAtras.style.visibility = state.paso === 0 ? 'hidden' : 'visible';
+  errorEl.textContent = '';
+  panel.querySelectorAll('[data-campo]').forEach(b => {
+    b.classList.toggle('sel', String(state.r[b.dataset.campo]) === b.dataset.valor);
+  });
+  const inp = document.getElementById('camarasInput');
+  if (inp && state.r.camaras) inp.value = state.r.camaras;
+  ev('paso_visto', { paso: state.paso + 1, id: p.id });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function pasoSiguiente() {
+  const p = pasos[state.paso];
+  const err = p.validar();
+  if (err) { errorEl.textContent = err; return; }
+  if (state.paso === pasos.length - 1) { finalizar(); return; }
+  state.paso++; renderPaso();
+}
+
+function finalizar() {
+  const c = calcular();
+  quiz.classList.add('oculto');
+  intro.classList.add('oculto');
+  resultado.classList.remove('oculto');
+  document.getElementById('resumen').innerHTML = resumenHTML(c);
+  const msg = encodeURIComponent(mensajeWhatsApp(c));
+  document.getElementById('btnWaResultado').href = `https://wa.me/${CONFIG.whatsapp}?text=${msg}`;
+  ev('cotizacion_completada', { camaras: state.r.camaras, calidad: state.r.calidad, dias: state.r.dias, disco_tb: c.disco });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function calcular() {
+  const cams = parseInt(state.r.camaras) || 0;
+  const dias = parseInt(state.r.dias) || 30;
+  const bitrate = BITRATE_MBPS[state.r.calidad] || 2.6;
+  const factor = state.r.grabacion === 'movimiento' ? 0.45 : 1;
+  const gbDia = cams * bitrate * 3600 * 24 * factor / 8 / 1000;
+  const tbReq = gbDia * dias * 1.15 / 1000;
+  const disco = DISCOS_TB.find(d => d >= tbReq) || null;
+  const discoTxt = disco ? disco + ' TB' : 'más de 20 TB (proyecto a medida)';
+  const diasConDisco = disco ? Math.floor(disco * 1000 * 0.9 / gbDia) : null;
+  return { cams, dias, gbDia, tbReq, disco, discoTxt, diasConDisco, bitrate };
+}
+
+function sistemaSugerido() {
+  const c = parseInt(state.r.camaras) || 0;
+  const internet = state.r.internet;
+  const dist = state.r.distancia;
+  let s;
+  if (c <= 2 && internet === 'buena') s = 'Cámara WiFi inteligente (tipo EZVIZ) con tarjeta microSD de videovigilancia: ves todo desde el celular sin cables de red.';
+  else if (c <= 4) s = 'Kit de 4 cámaras (bullet o torreta) + DVR de 4 canales + disco de videovigilancia + instalación profesional.';
+  else if (c <= 16) s = 'Sistema IP por cable (UTP/PoE) + NVR de 8 o 16 canales + switch PoE + disco dimensionado a tus días de retención.';
+  else s = 'Proyecto empresarial: NVR de alta capacidad, varios switches PoE, cableado estructurado y plan de crecimiento por etapas.';
+  if (dist === 'mas60' || dist === '30a60') s += ' Al estar a más de 30 m del router, se recomienda cableado UTP/PoE o un punto de acceso WiFi adicional.';
+  if (internet === 'no') s += ' Sin internet en el sitio, el sistema graba localmente y se puede agregar un módem 4G o enlace posterior.';
+  return s;
+}
+
+function resumenHTML(c) {
+  const r = state.r;
+  const filas = [
+    ['Tipo de espacio', r.tipo_txt], ['Cámaras', r.camaras_txt], ['Ubicación', r.ubicacion_txt],
+    ['Calidad', r.calidad_txt], ['Retención deseada', r.dias_txt], ['Grabación', r.grabacion_txt],
+    ['Internet en el sitio', r.internet_txt], ['Distancia al punto lejano', r.distancia_txt],
+    ['Nombre', r.nombre], ['WhatsApp', r.whatsapp], ['Zona', r.zona], ['Visita técnica', r.visita_txt || 'No indicated']
+  ].filter(f => f[1]);
+  return `
+    <div class="tarjeta"><h3>📋 Tus respuestas</h3><dl>${filas.map(f => `<dt>${f[0]}</dt><dd>${f[1]}</dd>`).join('')}</dl></div>
+    <div class="tarjeta"><h3>💾 Almacenamiento estimado (H.265+, ~${c.bitrate} Mbps por cámara)</h3>
+      <dl>
+        <dt>Consumo por día</dt><dd class="resultado-num">${c.gbDia.toFixed(1)} GB/día</dd>
+        <dt>Espacio total para ${c.dias} días</dt><dd class="resultado-num">${c.tbReq.toFixed(2)} TB</dd>
+        <dt>Disco recomendado</dt><dd class="resultado-num">${c.discoTxt}</dd>
+        ${c.diasConDisco ? `<dt>Días de grabación con ese disco</dt><dd>${c.diasConDisco} días</dd>` : ''}
+      </dl>
+      <p class="aviso">Disco de videovigilancia recomendado (WD Purple / Seagate SkyHawk), no disco de computadora. Estimado con margen del 15%; el consumo real varía según el movimiento de la escena.</p>
+    </div>
+    <div class="tarjeta"><h3>🎯 Sistema sugerido</h3><p>${sistemaSugerido()}</p></div>`;
+}
+
+function mensajeWhatsApp(c) {
+  const r = state.r;
+  return `Hola Ojo Jarocho 👋, quiero cotizar un sistema de videovigilancia:\n` +
+    `• Espacio: ${r.tipo_txt}\n• Cámaras: ${r.camaras_txt}\n• Ubicación: ${r.ubicacion_txt}\n• Calidad: ${r.calidad_txt}\n` +
+    `• Retención: ${r.dias_txt} (${r.grabacion_txt})\n• Internet: ${r.internet_txt}\n• Distancia al punto lejano: ${r.distancia_txt}\n` +
+    `• Almacenamiento estimado: ${c.gbDia.toFixed(1)} GB/día → disco recomendado ${c.discoTxt}\n` +
+    `• Nombre: ${r.nombre}\n• Mi WhatsApp: ${r.whatsapp}\n• Zona: ${r.zona}\n• Visita técnica: ${r.visita_txt || 'No'}\n` +
+    `¿Me pueden enviar la cotización con precios? Gracias 🙌`;
+}
+
+quiz.addEventListener('click', e => {
+  const op = e.target.closest('[data-campo]');
+  if (op) {
+    state.r[op.dataset.campo] = op.dataset.valor;
+    state.r[op.dataset.campo + '_txt'] = op.dataset.texto;
+    quiz.querySelectorAll(`[data-campo="${op.dataset.campo}"]`).forEach(b => b.classList.toggle('sel', b === op));
+    errorEl.textContent = '';
+  }
+  if (e.target.closest('#btnSiguiente')) pasoSiguiente();
+  if (e.target.closest('#btnAtras') && state.paso > 0) { state.paso--; renderPaso(); }
+});
+quiz.addEventListener('input', e => {
+  if (e.target.id === 'camarasInput') {
+    const v = parseInt(e.target.value);
+    if (v > 0) {
+      state.r.camaras = v; state.r.camaras_txt = v + (v === 1 ? ' cámara' : ' cámaras');
+      quiz.querySelectorAll('[data-campo="camaras"]').forEach(b => b.classList.remove('sel'));
+    }
+  }
+  if (e.target.id === 'inNombre') state.r.nombre = e.target.value;
+  if (e.target.id === 'inWa') state.r.whatsapp = e.target.value;
+  if (e.target.id === 'inZona') state.r.zona = e.target.value;
+});
+
+document.getElementById('btnEmpezar').addEventListener('click', () => {
+  intro.classList.add('oculto');
+  quiz.classList.remove('oculto');
+  renderPaso();
+  ev('cotizador_iniciado');
+});
+document.getElementById('btnWaResultado').addEventListener('click', () => ev('whatsapp_click', { origen: 'cotizador' }));
+document.getElementById('btnTelResultado').addEventListener('click', () => ev('phone_click', { origen: 'cotizador' }));
+document.getElementById('btnCopiar').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(mensajeWhatsApp(calcular())); ev('copiar_resumen'); } catch (e) {}
+});
+document.getElementById('btnImprimir').addEventListener('click', () => window.print());
+document.getElementById('btnRehacer').addEventListener('click', () => {
+  state.paso = 0; state.r = {};
+  resultado.classList.add('oculto');
+  intro.classList.remove('oculto');
+  window.scrollTo({ top: 0 });
+});
+document.getElementById('waIntro').href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent('Hola Ojo Jarocho 👋, quiero una cotización de cámaras de seguridad. ¿Me ayudan?')}`;
+document.getElementById('waIntro').addEventListener('click', () => ev('whatsapp_click', { origen: 'intro' }));
+</script>
+</body>
+</html>

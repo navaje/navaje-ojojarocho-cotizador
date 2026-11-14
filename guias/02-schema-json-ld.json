@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.ojojarocho.online/#organization",
+      "name": "Ojo Jarocho",
+      "url": "https://www.ojojarocho.online/",
+      "logo": "https://www.ojojarocho.online/logo.png",
+      "telephone": "+52-999-918-5208",
+      "email": "ventas@ojojarocho.online",
+      "sameAs": [
+        "https://www.facebook.com/ojojarocho"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.ojojarocho.online/#localbusiness",
+      "name": "Ojo Jarocho",
+      "description": "Venta e instalación profesional de sistemas de videovigilancia (CCTV/IP, Hikvision y Dahua), redes y cableado estructurado. Servicio local en Veracruz y Cardel; venta de equipos con envío a todo México.",
+      "telephone": "+52-999-918-5208",
+      "email": "ventas@ojojarocho.online",
+      "url": "https://www.ojojarocho.online/",
+      "parentOrganization": { "@id": "https://www.ojojarocho.online/#organization" },
+      "areaServed": [
+        { "@type": "City", "name": "Veracruz" },
+        { "@type": "City", "name": "Boca del Río" },
+        { "@type": "City", "name": "Medellín de Bravo" },
+        { "@type": "City", "name": "Cardel" },
+        { "@type": "City", "name": "Alvarado" }
+      ],
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Instalación de cámaras de seguridad CCTV e IP",
+      "serviceType": "Instalación de sistemas de videovigilancia",
+      "provider": { "@id": "https://www.ojojarocho.online/#localbusiness" },
+      "areaServed": { "@type": "State", "name": "Veracruz" },
+      "offers": { "@type": "Offer", "url": "https://cotizador.ojojarocho.online/" }
+    },
+    {
+      "@type": "Service",
+      "name": "Redes y cableado estructurado",
+      "serviceType": "Instalación de redes, cableado UTP y WiFi",
+      "provider": { "@id": "https://www.ojojarocho.online/#localbusiness" },
+      "areaServed": { "@type": "State", "name": "Veracruz" }
+    },
+    {
+      "@type": "Service",
+      "name": "Venta de equipos de seguridad",
+      "serviceType": "Venta de cámaras, DVR/NVR, discos y accesorios con envío nacional",
+      "provider": { "@id": "https://www.ojojarocho.online/#localbusiness" },
+      "areaServed": { "@type": "Country", "name": "México" },
+      "offers": { "@type": "Offer", "url": "https://www.syscom.mx/tienda/ojojarocho" }
+    }
+  ]
+}
